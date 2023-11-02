@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1698928496 source:c:\users\hp\documents\github\employee-management\employee management system\ems.c
+	<stdio.h>
+	"SplashScreen.h"
+
+1698932081 c:\users\hp\documents\github\employee-management\employee management system\splashscreen.h
+
