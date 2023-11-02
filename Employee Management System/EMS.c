@@ -4,7 +4,7 @@
 int main()
 {
     SplashScreen();
-    sleep(4);
+    sleep(5);
     system("cls");
     return 0;
 }
