@@ -1,9 +1,11 @@
+    // structure for login and registration
     struct login
     {
        char Name[100] ;
        char Username[20];
        char Password[20];
     };
+    // function for registration
     regi()
     {
         FILE *log;
@@ -15,6 +17,7 @@
         scanf("%s",l.Username);
         printf("Enter pass word: ");
         scanf("%s",l.Password);
+        //adding the entered data in a txt file
         fwrite(&l,sizeof(l),1,log);
         fclose(log);
         printf("Registration compleat");
@@ -23,6 +26,7 @@
         system("CLS");
         login();
     }
+    //Function for login
     login()
     {
         char username[20];
@@ -34,6 +38,7 @@
         scanf("%s",&username);
         printf("Enter Password: ");
         scanf("%s",&password);
+        //running loop to compare the user name and password
         while(fread(&l,sizeof(l),1,log))
         {
             if(strcmp(username,l.Username)==0&&strcmp(password,l.Password)==0)
@@ -46,4 +51,5 @@
             }
         }
         fclose(log);
+
     }
