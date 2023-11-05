@@ -3,6 +3,8 @@
 #include<conio.h>
 #include"SplashScreen.h"
 #include"Login.h"
+#include"Menu.h"
+
 int main()
 {
     int c;
@@ -21,6 +23,5 @@ int main()
         system("CLS");
         login();
     }
-
     return 0;
 }
