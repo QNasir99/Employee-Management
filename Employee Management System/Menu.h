@@ -1,8 +1,46 @@
 #include<windows.h>
+FILE *fpt;
+struct emp {
+    char name[50];
+    float salary;
+    int age;
+    int id;
+};
+struct emp e;
+
+long int size =sizeof(e);
+void adddata()
+{
+    system("cls");
+    fseek(fpt, 1, SEEK_END);
+    char another = 'y';
+
+    while (another == 'y') {
+        printf("\nEnter Name : ");
+        scanf("%s", e.name);
+
+        printf("\nEnter Age : ");
+        scanf("%d", &e.age);
+
+        printf("\nEnter Salary : ");
+        scanf("%f", &e.salary);
+
+        printf("\nEnter EMP-ID : ");
+        scanf("%d", &e.id);
+
+        fwrite(&e, size, 1, fpt);
+
+        printf("\nWant to add another"
+               " record (Y/N) : ");
+        fflush(stdin);
+
+        scanf("%c", &another);
+    }
+}
+
 menu()
 {
     int choice;
-    FILE *fpt;
     fpt = fopen("Database.txt","r");
     if(fpt==NULL)
     {
