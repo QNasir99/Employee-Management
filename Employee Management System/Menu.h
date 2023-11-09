@@ -55,8 +55,8 @@ menu()
     printf("\n\t\t\t\t==================="
            "============================="
            "=====");
-    printf("\n\t\t\t\t[|:::>:::>:::>::>  "
-           "EMPLOYEE MANAGEMENT SYSTEM  <::<:::<:::"
+    printf("\n\t\t\t\t[|:::>:::::>  "
+           "EMPLOYEE MANAGEMENT SYSTEM  <:::"
            "<:::|]\t");
     printf("\n\t\t\t\t==================="
            "============================="
@@ -77,7 +77,6 @@ menu()
         printf("\n4. EDIT DATA\n");
         printf("\n5. EXIT\n");
         printf("\nENTER YOUR CHOICE\n");
-        fflush(stdin);
         scanf("%d",&choice);
     }
            switch(choice)
