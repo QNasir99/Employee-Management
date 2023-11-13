@@ -1,4 +1,4 @@
-// C program for the above approach
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -42,7 +42,7 @@ void addrecord()
 
 	while (another == 'y') {
 		printf("\nEnter Name : ");
-		scanf("%s", e.name);
+		scanf("%s", &e.name);
 
 		printf("\nEnter Age : ");
 		scanf("%d", &e.age);
